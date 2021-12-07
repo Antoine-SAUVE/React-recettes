@@ -7,9 +7,16 @@ import './app.scss';
 const App = () => (
   <div className="app">
    {/*ici je vais charger mes 3 composants*/}
-   <Title />
+   <Title
+    title="Crepe raffinées" 
+    author="John Deuf" 
+    difficulty={"Facile" }
+    imageUrl=""
+   />
    <Ingredients />
-   <Instructions />
+   <Instructions
+   steps={["la farine", "le sel"]} 
+   />
 
   </div>
 );
