@@ -1,0 +1,24 @@
+@use 'src/styles/vars';
+
+.instructions {
+    background-color: #f2f2f2;
+    //haut gauche haut droite bas droite bas gauche
+    border-radius: 10px 10px 0 0 ;
+    padding: 1rem;
+
+    &__item {
+       padding: 1rem 1rem 1rem 1.5rem; 
+       position: relative;
+
+       &::before {
+           content:'';
+           display: block;
+           background-color: vars.$primaryColor;
+           width: 15px;
+           height: 1px;
+           position: absolute;
+           left: 0;
+           top: 50%;
+       }
+    }
+}

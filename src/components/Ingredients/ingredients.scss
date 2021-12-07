@@ -1,0 +1,22 @@
+@use 'src/styles/vars';
+
+.ingredients {
+
+    &__item {
+        padding: 1rem 1rem;
+        border-bottom: 1px solid rgb(235, 235, 235);
+
+        // pas de borduer sur le dernier
+        &:last-child {
+            border-bottom: none;
+        }
+        &__quantity {
+            padding: 0.5rem 1rem;
+            background-color: vars.$primaryColor;
+            border-radius: 10px;
+            color: white;
+            margin-right: 1rem;
+        }
+    }
+    
+}
